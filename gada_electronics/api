@@ -1,0 +1,8 @@
+import frappe
+from frappe.model.document import Document
+
+def send(self):
+		doc = frappe.new_doc('sample2')
+		doc.sample2 = self.sample1
+		frappe.db.commit()
+		doc.insert()

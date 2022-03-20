@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-03-15 02:44:13.339340",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date_details",
+  "posting_date",
+  "due_date",
+  "details",
+  "party",
+  "account",
+  "account_type",
+  "debit_amount",
+  "credit_amount",
+  "profit",
+  "is_cancelled",
+  "voucher_details",
+  "voucher_type",
+  "voucher_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "date_details",
+   "fieldtype": "Section Break",
+   "label": "Date Details"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Link",
+   "label": "Party",
+   "options": "Party"
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Link",
+   "label": "Account",
+   "options": "Accounts"
+  },
+  {
+   "fieldname": "debit_amount",
+   "fieldtype": "Currency",
+   "label": "Debit Amount"
+  },
+  {
+   "fieldname": "credit_amount",
+   "fieldtype": "Currency",
+   "label": "Credit Amount"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_cancelled",
+   "fieldtype": "Check",
+   "label": "Is cancelled"
+  },
+  {
+   "fieldname": "voucher_details",
+   "fieldtype": "Section Break",
+   "label": "Voucher Details"
+  },
+  {
+   "fieldname": "voucher_type",
+   "fieldtype": "Select",
+   "label": "Voucher Type",
+   "options": "Debit\nCredit"
+  },
+  {
+   "fieldname": "voucher_number",
+   "fieldtype": "Data",
+   "label": "Voucher Number"
+  },
+  {
+   "fieldname": "profit",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Profit"
+  },
+  {
+   "fieldname": "account_type",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Account Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-03-20 14:51:39.698588",
+ "modified_by": "Administrator",
+ "module": "gada_electronics",
+ "name": "General Ledger Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
